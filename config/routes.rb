@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  root 'top_page#home'
+  get '/help', to: 'top_page#help'
 end
