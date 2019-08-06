@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :jobs
   root 'top_page#home'
   get '/help', to: 'top_page#help'
   devise_for :users,
