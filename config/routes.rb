@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get '/help', to: 'top_page#help'
   devise_for :users,
     path: '',
-    path_names: {sign_in: 'login', sign_out: 'ogout', edit: 'profile', sign_up: 'registration'},
+    path_names: {sign_in: 'login', sign_out: 'logout', edit: 'profile', sign_up: 'registration'},
     controllers: {
       sessions: "users/sessions",
       registrations: "users/registrations",
