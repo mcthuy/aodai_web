@@ -2,24 +2,30 @@
 @import "bootstrap";
 
 div.field {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 30 !important;
     
 }
 div.actions {
-  margin-left: 150px;
-  margin-right: 150px;
-    
+  
+  margin-left: 350px;
+  margin-right: 350px;
+  padding: 1px !important;
 }
 
 .hei{
-  height: 50px;
+  height: 28px !important;
 }
 
 .skill{
-  height: 80px;
+  height: 80px !important;
 }
 
 .status{
-  height: 100px;
+  height: 100px !important;
+}
+
+.back{
+  margin-left: 200px !important;
 }
