@@ -13,35 +13,33 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, class: "hei" %>
+    <%= form.text_area :title, class: "hei", placeholder: "Ex: Web application" %>
   </div>
 
   <div class="field">
     <%= form.label :salary %>
-    <%= form.text_field :salary ,class: "hei"%>
-  </div>
-
-  <div class="field">
-    <%= form.label :id_user %>
-    <%= form.number_field :id_user,class: "hei" %>
-  </div>
-
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.number_field :status,class: "status" %>
+    <%= form.text_field :salary ,class: "hei", placeholder: "Ex: 2000$" %>
   </div>
 
   <div class="field">
     <%= form.label :skill %>
-    <%= form.text_field :skill,class: "skill" %>
+    <%= form.text_area :skill, class: "skill", placeholder: "Ex: C#, C, Java" %>
   </div>
 
   <div class="field">
     <%= form.label :time %>
-    <%= form.text_field :time %>
+    <%= form.text_field :time, class: "tb-time", placeholder: "Ex: 3 days or 3 hours" %>
   </div>
 
-  <div class="actions">
+  <div class="field">
+    <%= form.hidden_field :id_user, value: current_user.id%>
+  </div>
+
+  <div class="field">
+    <%= form.hidden_field :status, value: '未検閲'%>
+  </div>
+
+  <div class="actions bt-createjob">
     <%= form.submit %>
   </div>
 <% end %>

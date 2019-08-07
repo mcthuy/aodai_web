@@ -1,4 +1,6 @@
-<form id="form1" action="自分のサイトURL">
-<input id="sbox"  id="s" name="s" type="text" placeholder="フリーワード検索" />
-<input id="sbtn" type="submit" value="検索" />
-</form>
+<%= form_tag(jobs_path, method: :get) do %>
+  <%= text_field_tag :title, params[:title] %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+<%= link_to '作業登録', new_job_path, class: "btn btn-primary", style: 'color: white'  %>
