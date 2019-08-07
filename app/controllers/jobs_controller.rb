@@ -4,7 +4,11 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.search(params[:title])
+    if user_signed_in?
+      @jobs = Job.search(params[:title])
+    else
+      redirect_to new_user_session_url
+    end
   end
 
   # GET /jobs/1
@@ -25,7 +29,6 @@ class JobsController < ApplicationController
   # POST /jobs.json
   def create
     @job = Job.new(job_params)
-
     respond_to do |format|
       if @job.save
         format.html { redirect_to @job, notice: 'Job was successfully created.' }
