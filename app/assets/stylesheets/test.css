@@ -124,3 +124,13 @@ h3{
   font-size : 20px ;
   margin-right:190px;
 }
+
+.to-regi{
+  text-align: center;  
+  font-size : 15px ;
+}
+
+th{
+  text-align: center;
+  vertical-align: bottom;
+}
