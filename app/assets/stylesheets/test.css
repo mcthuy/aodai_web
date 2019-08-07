@@ -15,48 +15,95 @@ h3{
   color : black ;
   font-size : 40px ;
 }
+
 .forget{
   text-align: center; 
 }
 
-.input-regis{
+.input-email{
   color : black ;
   font-size : 20px ;
-  position :relative; right :180px ;
+  margin-left:-20%;
 }
-
-
+.input-password{
+  color : black ;
+  font-size : 20px ;
+  margin-left:-23%;
+}
+.input-password-s{
+  color : black ;
+  font-size : 20px ;
+  margin-left:-11%;
+}
+.input-repassword{
+  color : black ;
+  font-size : 20px ;
+  margin-left:-18%;
+}
+.input-name{
+  color : black ;
+  font-size : 20px ;
+  margin-left:-28%;
+}
+.input-address{
+  color : black ;
+  font-size : 20px ;
+  margin-left:-28%;
+}
+.input-phonenumber{
+  color : black ;
+  font-size : 20px ;
+  margin-left:-25%;
+}
 
 .bt-signin{
   width:150px;
   height:50px;
-  font-size:20px ;
+  font-size:15px ;
 }
 
 .bt-signup{
   width:150px;
   height:50px;
-  font-size:20px ;
+  font-size:15px ;
 }
 
-.remember_me{
-  font-size:20px ;
-}
 
 .button-f{
   width:400px;
   height:50px;
-  font-size:20px ;
+  font-size:15px ;
 }
 
 .to-login{
-  font-size:20px;
+  font-size:15px;
 }
 
 .to-signup{
-  font-size:20px;
+  font-size:15px;
 }
 
 .to-forget{
-  font-size:20px;
+  font-size:15px;
 }
+
+.checkbox{
+  position:relative;
+  left:580px;
+  top:16px;
+}
+.remember_me{
+  font-size:15px ;
+}
+
+.input-role{
+  position: relative;
+  right: 6%;
+  font-size: 20px;
+}
+
+.input-select, #user_role{
+  width: 400px;
+  height: 38px;
+}
+

@@ -5,17 +5,17 @@
     <%= render "devise/shared/error_messages", resource: resource %>
   
     <div class="field form-row-register">
-      <%= f.label :role %><br/>
-      <%= f.select :role, {sinhvien:1, xinghiep:2} %>
+      <%= f.label :学生ですか？企業ですか？, class: "input-role" %><br/>
+      <%= f.select :role, {学生:1, 企業:2} , class: "input-select" %>
     </div>
   
     <div class="field">
-      <%= f.label :email, class: "input-regis" %><br />
+      <%= f.label :メールアドレス, class: "input-email" %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" , class: "input-textbox" %>
     </div>
   
     <div class="field">
-      <%= f.label :password, class: "input-regis" %>
+      <%= f.label :パスワード, class: "input-password-s" %>
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
@@ -23,27 +23,27 @@
     </div>
   
     <div class="field">
-      <%= f.label :password_confirmation, class: "input-regis"%><br />
+      <%= f.label :パスワードの確認, class: "input-repassword"%><br />
       <%= f.password_field :password_confirmation, autocomplete: "new-password" , class: "input-textbox" %>
     </div>
   
     <div class="field form-row-register">
-      <%= f.label :name , class: "input-regis" %><br/>
+      <%= f.label :名前 , class: "input-name" %><br/>
       <%= f.text_field :name , class: "input-textbox" %>
     </div>
   
     <div class="field form-row-register">
-      <%= f.label :address , class: "input-regis" %><br/>
+      <%= f.label :住所 , class: "input-address" %><br/>
       <%= f.text_field :address , class: "input-textbox" %>
     </div>
   
     <div class="field form-row-register">
-      <%= f.label :phonenumber , class: "input-regis" %><br/>
+      <%= f.label :電話番号 , class: "input-phonenumber" %><br/>
       <%= f.text_field :phonenumber , class: "input-textbox"%>
     </div>
   
     <div class="actions">
-      <%= f.submit "Sign up" , class: "bt-signup" %>
+      <%= f.submit "サインアップ" , class: "bt-signup" %>
     </div>
   <% end %>
   

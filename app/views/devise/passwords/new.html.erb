@@ -6,12 +6,12 @@
     <%= render "devise/shared/error_messages", resource: resource %>
   
     <div class="field">
-      <%= f.label :email ,class: "email" %><br />
+      <%= f.label :メールアドレス ,class: "input-email" %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class: "input-textbox" %>
     </div>
   <br />
     <div class="actions" >
-      <%= f.submit "Send me reset password instructions",class: "button-f" %>
+      <%= f.submit "パスワード再設定のメールを送信します",class: "button-f" %>
     </div>
   <% end %>
   <br />
