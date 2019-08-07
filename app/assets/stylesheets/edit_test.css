@@ -1,18 +1,6 @@
-.field{
-position:relative;/*フォームの相対位置*/	
-max-width:500px;/*フォームのサイズ*/
-margin-bottom:15px;/*フォームの下に余白*/
-text-align: left;
-margin: 0 auto;
-font-size: 15px;
+.edit-user{
+  text-align: center; 
+
 }
 
 
-.actions{
-position:relative;/*フォームの相対位置*/	
-max-width:250px;/*フォームのサイズ*/
-margin-bottom:15px;/*フォームの下に余白*/
-text-align:center;
-margin: 0 auto;
-font-size:15px;
-}
