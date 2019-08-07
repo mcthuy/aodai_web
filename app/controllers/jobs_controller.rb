@@ -24,8 +24,6 @@ class JobsController < ApplicationController
   # POST /jobs
   # POST /jobs.json
   def create
-    job_params[:id_user] = 
-    job_params[:status] = ''
     @job = Job.new(job_params)
 
     respond_to do |format|
@@ -71,7 +69,7 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params.require(:job).permit(:title, :salary, :skill, :time)
+      params.require(:job).permit(:title, :salary, :skill, :time, :status, :id_user)
     end
 
     # def jobs_params

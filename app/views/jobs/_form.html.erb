@@ -31,6 +31,14 @@
     <%= form.text_field :time, class: "tb-time", placeholder: "Ex: 3 days or 3 hours" %>
   </div>
 
+  <div class="field">
+    <%= form.hidden_field :id_user, value: current_user.id%>
+  </div>
+
+  <div class="field">
+    <%= form.hidden_field :status, value: '未検閲'%>
+  </div>
+
   <div class="actions bt-createjob">
     <%= form.submit %>
   </div>

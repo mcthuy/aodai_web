@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_06_063317) do
+ActiveRecord::Schema.define(version: 2019_08_07_041456) do
 
   create_table "jobs", force: :cascade do |t|
     t.string "title"
     t.integer "salary"
     t.integer "id_user"
-    t.integer "status"
+    t.string "status"
     t.string "skill"
     t.string "time"
     t.datetime "created_at", null: false
