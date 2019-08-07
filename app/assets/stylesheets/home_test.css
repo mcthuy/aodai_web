@@ -1,0 +1,23 @@
+.textbox {
+position:relative;/*フォームの相対位置*/	
+max-width:270px;/*フォームのサイズ*/
+margin-bottom:15px;/*フォームの下に余白*/
+  	margin: 0 auto;
+}
+
+.bt-search{
+width:70px;/*検索ボタンの横幅*/ 
+height:50px;/*検索ボタンの縦幅*/ 
+position:absolute;/*検索ボタンの絶対位置*/  
+left:270px;/*検索ボタンの位置調整*/  
+top:0; 
+font-size:12px;/*検索ボタンのフォントサイズ*/ 
+}
+
+.box{
+  position:absolute;/*フォームの絶対位置*/	
+left:0;
+top:0; 
+height:50px;/*検索ボックスの高さ*/	
+padding:0 10px;/*テキスト位置調整*/	 
+}
