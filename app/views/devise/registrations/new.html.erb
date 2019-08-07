@@ -1,49 +1,51 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field form-row-register">
-    <%= f.label :role %><br/>
-    <%= f.select :role, {sinhvien:1, xinghiep:2} %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field form-row-register">
-    <%= f.label :name %><br/>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field form-row-register">
-    <%= f.label :address %><br/>
-    <%= f.text_field :address %>
-  </div>
-
-  <div class="field form-row-register">
-    <%= f.label :phonenumber %><br/>
-    <%= f.text_field :phonenumber %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+<div class="new-user">
+  <h2>Sign up</h2>
+  
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+  
+    <div class="field form-row-register">
+      <%= f.label :学生ですか？企業ですか？, class: "input-role" %><br/>
+      <%= f.select :role, {学生:1, 企業:2} , class: "input-select" %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :メールアドレス, class: "input-email" %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" , class: "input-textbox" %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :パスワード, class: "input-password-s" %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class: "input-textbox" %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :パスワードの確認, class: "input-repassword"%><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" , class: "input-textbox" %>
+    </div>
+  
+    <div class="field form-row-register">
+      <%= f.label :名前 , class: "input-name" %><br/>
+      <%= f.text_field :name , class: "input-textbox" %>
+    </div>
+  
+    <div class="field form-row-register">
+      <%= f.label :住所 , class: "input-address" %><br/>
+      <%= f.text_field :address , class: "input-textbox" %>
+    </div>
+  
+    <div class="field form-row-register">
+      <%= f.label :電話番号 , class: "input-phonenumber" %><br/>
+      <%= f.text_field :phonenumber , class: "input-textbox"%>
+    </div>
+  
+    <div class="actions">
+      <%= f.submit "サインアップ" , class: "bt-signup" %>
+    </div>
+  <% end %>
+  
+  <%= render "devise/shared/links" %>
+</div>
