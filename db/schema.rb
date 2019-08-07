@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_08_06_042615) do
-=======
 ActiveRecord::Schema.define(version: 2019_08_06_063317) do
-=======
-ActiveRecord::Schema.define(version: 2019_08_06_041646) do
->>>>>>> fix css signup
 
   create_table "companies", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -30,8 +23,6 @@ ActiveRecord::Schema.define(version: 2019_08_06_041646) do
     t.index ["email"], name: "index_companies_on_email", unique: true
     t.index ["reset_password_token"], name: "index_companies_on_reset_password_token", unique: true
   end
-<<<<<<< HEAD
->>>>>>> add job
 
   create_table "jobs", force: :cascade do |t|
     t.string "title"
@@ -43,8 +34,6 @@ ActiveRecord::Schema.define(version: 2019_08_06_041646) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-=======
->>>>>>> fix css signup
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
