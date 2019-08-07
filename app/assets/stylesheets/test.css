@@ -22,38 +22,40 @@ h3{
 
 .input-email{
   color : black ;
-  font-size : 20px ;
-  margin-right:260px;
+  font-size : 15px ;
+  position:absolute;
+  top:210px;
+  left:420px;
 }
 
 .input-password{
   color : black ;
-  font-size : 20px ;
+  font-size : 15px ;
   margin-right:300px;
 }
 .input-password-s{
   color : black ;
-  font-size : 20px ;
+  font-size : 15px ;
   margin-right:300px;
 }
 .input-repassword{
   color : black ;
-  font-size : 20px ;
+  font-size : 15px ;
   margin-right:240px;
 }
 .input-name{
   color : black ;
-  font-size : 20px ;
+  font-size : 15px ;
   margin-right:360px;
 }
 .input-address{
   color : black ;
-  font-size : 20px ;
+  font-size : 15px ;
   margin-right:360px;
 }
 .input-phonenumber{
   color : black ;
-  font-size : 20px ;
+  font-size : 15px ;
   margin-right:320px;
 }
 
@@ -101,7 +103,7 @@ h3{
 .input-role{
   position: relative;
   right: 80px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #user_role{
@@ -115,22 +117,23 @@ h3{
 
 .new-password{
   color : black ;
-  font-size : 20px ;
-  margin-right:250px;
+  font-size : 15px ;
+  margin-right:275px;
 }
 
 .new-repassword{
   color : black ;
-  font-size : 20px ;
-  margin-right:190px;
-}
-
-.to-regi{
-  text-align: center;  
   font-size : 15px ;
+  position:absolute;
+  top:325px;
+  left:420px;
 }
 
-th{
-  text-align: center;
-  vertical-align: bottom;
+.current-password{
+    color : black ;
+  font-size : 15px ;
+  position:absolute;
+  top:380px;
+  left:420px;
 }
+

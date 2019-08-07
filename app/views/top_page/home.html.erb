@@ -1,7 +1,9 @@
+<div class="textbox">
 <%= form_tag(jobs_path, method: :get) do %>
-  <%= text_field_tag :title, params[:title] %>
-  <%= submit_tag '検索' %>
+  <%= text_field_tag :title, params[:title],class:"box" %>
+  <%= submit_tag '検索',class:"bt-search" %>
 <% end %>
 <% if user_signed_in? && current_user.role == 2 %>
   <%= link_to '作業登録', new_job_path, class: "btn btn-primary", style: 'color: white' %>
 <% end %>
+</div>
