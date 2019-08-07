@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2019_08_07_041456) do
     t.string "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["id_user", "created_at"], name: "index_jobs_on_id_user_and_created_at"
   end
 
   create_table "users", force: :cascade do |t|
